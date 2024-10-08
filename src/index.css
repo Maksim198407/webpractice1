@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-black text-white;
+}
+
+@keyframes moveShape1 {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes moveShape2 {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes moveShape3 {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.shape1-animation {
+  animation: moveShape1 5s ease-in-out infinite;
+}
+
+.shape2-animation {
+  animation: moveShape2 6s ease-in-out infinite;
+}
+
+.shape3-animation {
+  animation: moveShape3 7s ease-in-out infinite;
+}
